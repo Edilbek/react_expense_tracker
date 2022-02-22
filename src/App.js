@@ -1,4 +1,4 @@
-import ExpenseTable from "./components/ExpenseTable";
+import Expenses from "./components/Expenses";
 
 function App() {
   const expenses = [
@@ -8,7 +8,7 @@ function App() {
     { title: "Gym", amount: 50, date: new Date(2022, 21, 4) },
   ];
 
-  return <ExpenseTable expenses={expenses}/>;
+  return <Expenses expenses={expenses}/>;
 }
 
 export default App;

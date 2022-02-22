@@ -1,14 +1,15 @@
 import ExpenseItem from "./ExpenseItem";
-import "./ExpenseTable.css";
+import Card from "./Card";
+import "./Expenses.css";
 
-const ExpenseTable = ({expenses}) => {
+const Expenses = ({expenses}) => {
   return (
-    <div className="expenses">
+    <Card className="expenses">
       {expenses.map((expense, index) => (
         <ExpenseItem expense={expense} key={index} />
       ))}
-    </div>
+    </Card>
   );
 }
 
-export default ExpenseTable;
+export default Expenses;
