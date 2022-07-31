@@ -18,9 +18,8 @@ const NewExpense = (props) => {
 
   return (
     <div className="new-expense">
-      {isOpen ?
-        <ExpenseForm onSaveExpenseData={saveExpenseDataHandler} toggle={toggle}/> :
-        <button onClick={toggle}>Add New Expense</button>}
+      {isOpen && <ExpenseForm onSaveExpenseData={saveExpenseDataHandler} toggle={toggle}/>}
+      {!isOpen && <button onClick={toggle}>Add New Expense</button>}
     </div>
   );
 };
